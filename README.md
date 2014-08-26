@@ -76,20 +76,21 @@ Disciplines uses a number of open source projects to work properly:
 * [sqlite3]
 
 
-Some outhors like [Vinck], [Lyall], [Klein].
+Some authors like [Vinck], [Lyall], [Klein].
 
 Concepts as [interdisciplinarity], [multidisciplinarity], [transdisciplinarity]
 Events like [Interdisciplinarity: How to make it work], [Academic demarcations]
 Disciplines like [philosophy], [law], [medicine], [theology], [physics], [chemistry], [sociology], [economics] and many many many more.
-
 Learned societies like [List of learned societies]
 
 Installation
 --------------
-
-Later...
+Not yet...
 
 License
 ----
 MIT
-[a relative link](doc/other_file.md)
+[Documentation](doc/doc.md)
+[More documentation](doc/more.md)
+docs.md	Readme corrections	an hour ago
+more.md
