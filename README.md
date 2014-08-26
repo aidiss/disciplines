@@ -92,5 +92,4 @@ Later...
 License
 ----
 MIT
-
-[/doc/more.md]
+[a relative link](doc/other_file.md)
