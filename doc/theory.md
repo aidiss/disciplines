@@ -1,8 +1,59 @@
+Theory
+=====
+
+The theory is based in works of many different authors.
+Theory module includes many theories and implement their claims into the code.
+
+[Vinck], [Lyall], [Klein], [Biglan], [Becher], [Krishnan] and others
+
+Based on their work different theories were implemented:
+
+There are other publications that might be interesting.
+[esf peerreview guide]:http://www.esf.org/coordinating-research/mo-fora/peer-review.html
+
+
+Particular theories:
+---
+
+|name|authors involved |claim|data|
+|---|---|---|---|
+|emergence of discipline| [Ziman]| Emergent in 5 stages | |
+|border wars |[Vinck]| 5 types of wars| |
+|organisational structures| [Vinck]| different org structures|
+|justification for interdisciplinary work| [Vinck]|justifications differs||
+|learning styles| [Vinck]| learning styles are different||
+|power struggles| [Vinck]| power struggles are going on ||
+|regimes of knowledge production |[Vinck]|different regimes of knowledge production||
+|structuring of research fields| [Vinck]| research fields are structured in different ways||
+|taxonomy of interdisciplinarity |[Klein]| expand this one||
+|disciplinary grouping|[Becher]| disciplines can be group according to three axes||
+|classification of disciplines| [Biglan], [Hobbes]|offers for different classification||
+|what are academic disciplines| [Krishnan]| sociological, historica, philosophical and managment perspectives of what disciplines are||
 
 ___
+Documentation for each theory will be added later.
 
-Theories
+[Vinck]:http://epr.ist.utl.pt/~epr.daemon/EPGC/index.php/dominique-vinck
+[Lyall]:http://www.sps.ed.ac.uk/staff/science_technology_and_innovation_studies/lyall_catherine
+[Klein]:http://csid.unt.edu/about/people/klein/
+[Krishnan]:
+[Becher]:
+[Biglan]:
+[Lyall]:
+
+Barre, R., Hernandez, V., Meyer, J. B., & Vinck, D. (2003). Scientific diasporas. Paris: IRD Editions.
+Vinck, D. The sociology of scientific work. The fundamental relationship between science and society.
+Ziman JM (1987) An Introduction to Science Studies. 
+
+___
+---
+___
 ===
+
+
+
+
+___
 What are academic disciplines?
 
 
@@ -276,11 +327,3 @@ is_critical()
 is_endogenous()
 is_exogenous()
 ```
-
-___
-Overview
-==
-
-A discipline is what is being described as a discipline by those who study disciplines.
-
-Within theorie we have a list of disciplines that were mentioned.
