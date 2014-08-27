@@ -1,16 +1,26 @@
 # -*- coding: utf-8 -*-
 """Characterisation of organisational structures
 
-Checks the characterisation of organisational structure
+Checks the characterisation of organisational structure. It is based on two axes
+functional dependence and strategic dependence. Uncertainty is a third axis.
 
-Theory:
+Args:
+    dependencies
+    authors
+    concepts
+    data
+    theory
+"""
+
+dependencies = ['functional', 'strategic']
+authors = ['Vinck']
+concepts = ['cumulative results', 'teams']
+data = ['teams', 'procedures']
+theory = '''
     Uncertainty can be split into two dimensions:
     1 Technical uncertainty: control of procedures and of the ability to achieve results.
     2 Strategic uncertainty: importance given to research problems, their relevance and
-    degree of priority.
-"""
-
-
+    degree of priority.'''
 
 
 def get_functional_dependence(dsc, team, procedurs, results):
@@ -62,9 +72,6 @@ def get_strategic_dependence(dsc, team, procedures, results):
     Returns:
         int from 0 to 1 where 1 represents totally sure.
     """
-
-
-
 
 #Now for each
 """

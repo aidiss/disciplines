@@ -4,21 +4,71 @@
 Described as such by Vinck in Sociology of Scientific Work
 
 Note:
-Find struggles in data.
-Get data for struggles. Maybe special function for. Connecting database and theories?
+    Find struggles in data.
+    Get data for struggles. Maybe special function for. Connecting database and theories?
+
+Disciplines mentioned:
+    molecular biology,
+    cellular biology,
+    theology, 
+    physics, 
+    molecular biology, 
+    sociology, 
+    economics, 
+    sociobiology, 
+    neurosciences,
+    cognitive psychology,
+    botany, 
+    zoology,
+    physiology,
+
+Concepts mentioned:
+    "soft sciences",
+    "inhuman sciences"
+
+Paricular relations mentioned:
+    
 """
+author = 'Vinck'
+authors = author
+concepts = []
+data = []
+claim = 
+theory = '''
+    '''
+approach =  
+reading =
+disciplines_mentioned = [
+    'molecular biology',
+    'cellular biology',
+    'theology', 
+    'physics', 
+    'molecular biology', 
+    'sociology', 
+    'economics', 
+    'sociobiology', 
+    'neurosciences',
+    'cognitive psychology',
+    'botany', 
+    'zoology',
+    'physiology']
 
 def border_wars():
-    """Border wars: for example, between molecular biology and cellular biology.
+    """
 
-    Examples:
-    molecular biology and cellular biology"""
+    Theory:
+        Border wars: for example, between molecular biology and cellular biology.
+        Examples:
+            molecular biology and cellular biology"""
+
     example_disciplines = ['molecular biology', 'cellular biology']
+    border = 
     return
 
 def wars_of_conquest():
-    """
+    """ Conquest
 
+    Are wars happening because of conquest?
 
     Theory:
         Wars of conquest and hegemony where, each in turn, theology, physics, molecular 
@@ -45,7 +95,7 @@ morals using strictly biological bases.
 unifi ed psychology, psychoanalysis and aesthetics.
 
     Return:
-    result - is discipline engaged in war
+        result - is discipline engaged in war
     """
     example_disciplines = ['theology', 'physics', 'sociology', 'economics', 'sociobiology', 'neurosciences'] # Could be expanded into dictionary containing more info
     return
@@ -62,10 +112,9 @@ def attempts_at_eradication():
     Theory:
     Attempts at eradication: for example, in the cognitive sciences, the proclamations by
     the neurosciences of the forthcoming end of cognitive psychology.
-
-    Examples:
-    Neurosciences and cognitive psychology - neurosciences (who) claimed forhcoming end of 
-    cognitive psychology.
+        Examples:
+        Neurosciences and cognitive psychology - neurosciences (who) claimed forhcoming end of 
+        cognitive psychology.
     """
     example_disciplines = ['neurosciences', 'cognitive psychology']
     example_action = ('neurosciences', 'cognitive psychology', {eradication_claim: True})
@@ -83,19 +132,20 @@ def caricature_simplification_and_instrumentalisation():
 def economic_war():
     """
     Theory:
-    Economic war when the authorities in charge of allocating resources (posts, subsidies,
-    equipment and premises), take action to weaken rival disciplines for the benefi t of their
-    own discipline. This is how disciplines like botany, zoology and physiology came to be in
-    a state of collapse at the end of the 1960s because the scientific managers of the French
-    CNRS redeployed their resources to molecular biology, hence placing other disciplines
-    below the survival threshold.
-
+        Economic war when the authorities in charge of allocating resources (posts, subsidies,
+        equipment and premises), take action to weaken rival disciplines for the benefi t of their
+        own discipline. This is how disciplines like botany, zoology and physiology came to be in
+        a state of collapse at the end of the 1960s because the scientific managers of the French
+        CNRS redeployed their resources to molecular biology, hence placing other disciplines
+        below the survival threshold.
+        Examples:
+            botany, zoology and physiology in relation to molecular biology.
+    
     Vars:
-    example_disciplines
-    example_action
+        example_disciplines
+        example_action
 
-    Examples:
-    botany, zoology and physiology in relation to molecular biology.
+
     """
     example_disciplines = ['botany', 'zoology', 'physiology', 'molecular biology']
     example_action = [
@@ -105,19 +155,18 @@ def economic_war():
     return
 
 def psychological_war_or_war_of_attrition():
-    """
+    """ Psychological war or war of attrition
 
     Theory:
     Psychological war and war of attrition when, without meaning to have a negative
     effect, some people repeatedly use terms such as ‘soft sciences’ when referring to the
     social sciences, which, in turn, retaliate with a less effective ‘inhuman sciences
-
-    Examples:
-    "soft sciences"
-    "inhuman sciences"
+        Examples:
+            "soft sciences"
+            "inhuman sciences"
 
     Note:
-    is psychological war mostly conducted by psychology?
+        is psychological war mostly conducted by psychology?
     """
     example_stuff = ['social sciences']
     example_concepts = ["soft sciences", "inhuman sciences"]
@@ -132,8 +181,11 @@ def where_in_tree_of_knowledge(dsc, tree):
     Longer.
 
     Args:
+        dsc (str) : discipline name.
+        tree (graph object) : a tree.
 
     Returns:
+        answer
 
     Notes:
     Might assess its importance.
@@ -141,12 +193,12 @@ def where_in_tree_of_knowledge(dsc, tree):
     """
     dsc
     tree
-    return
+    return answer
 
 def is_borrowed(cnc):
-    """ what.
+    """ Is concept borrowed
 
-    Longer.
+    Checks whether concept is borrowed.
 
     Args:
 
@@ -159,16 +211,33 @@ def is_borrowed(cnc):
     return result
 
 def is_psychological_warfare_concept(cnc):
-    """ what.
+    """ Is concept use in psychological warfare.
 
     Longer.
 
     Args:
-
+        cnc
     Returns:
+        answer (float)
 
     Notes:
 
     """
     cnc
-    returnresult
+    return result
+
+def get_psychological_warfare_concept(cnc):
+    """ gets psychological warfare concepts.
+
+    Longer.
+
+    Args:
+        cnc
+    Returns:
+        answer (float)
+
+    Notes:
+
+    """
+    cnc
+    return result

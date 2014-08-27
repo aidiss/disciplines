@@ -22,8 +22,8 @@ def assess_data_fitness(data, theory):
 	"""
 	theory_requirements = ""
 	#theory_requirements = help(theory)
-	theory_requirements = theory.__doc__
-		re.find("\nArgs:\n")
+#	theory_requirements = theory.__doc__
+#		re.find("\nArgs:\n")
 
 
 def get_data_requirements(theory):
@@ -34,11 +34,13 @@ def get_data_requirements(theory):
 	Returns:
 		dataname (list) : (people, events, citation network)
 	"""
-
+	dataname = ['John']
+	result = []
 	if True:
 		result.append(dataname)
+	return "This is the required data"
 
-def check_overall_fitness(data, complete=False):
+def check_overall_fitness(data, all_theories, complete=False,):
 	"""Checks health of all theory based on available data.
 
 	Args:
@@ -48,9 +50,14 @@ def check_overall_fitness(data, complete=False):
 
 	Returns:
 		result (dictionary) : {theory: value}"""
-		for theory in all_theories():
-			data_fitness = assess_data_fitness(assess_data_fitness)
-			mydict[theory] = data_fitness
+	all_theories = [1,2,3]
+	result = ''
+	data_fitness = ''
+	mydict = {}
+	for theory in all_theories:
+		data_fitness = assess_data_fitness(assess_data_fitness, 'd')
+		mydict[theory] = data_fitness
+	return "The overal fitness is ..."
 
 def is_datatype_required(data, datatype, theory, complete=False):
 	"""Checks whether datatype is 
@@ -62,10 +69,12 @@ def is_datatype_required(data, datatype, theory, complete=False):
 
 	Returns:
 		result (int[0:5]) : where the higher int the bigger importance """
-
+	result = ''
+	def is_required(data):
+		return
 	for data in theory:
-		if is_required(data) == True:
+		if is_required(data):
 			result[data] = True # Or details
 			if complete == True:
 				result[data] = "more info about how it is required"
-	return result
+	return False

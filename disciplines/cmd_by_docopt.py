@@ -1,24 +1,39 @@
-"""Naval Fate.
+"""Usage: print.py --count=N [--caps] TEXT...
 
-Usage:
-  naval_fate.py ship new <name>...
-  naval_fate.py ship <name> move <x> <y> [--speed=<kn>]
-  naval_fate.py ship shoot <x> <y>
-  naval_fate.py mine (set|remove) <x> <y> [--moored | --drifting]
-  naval_fate.py (-h | --help)
-  naval_fate.py --version
+Arguments:
+    TEXT  Message to be printed
 
 Options:
-  -h --help     Show this screen.
-  --version     Show version.
-  --speed=<kn>  Speed in knots [default: 10].
-  --moored      Moored (anchored) mine.
-  --drifting    Drifting mine.
-
+    --disciplines list all disciplines from examples
+    --name  prints "This module is named disciplines"
 """
-from docopt import docopt
 
+# Docopt is a library for parsing command line arguments
+import docopt
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='Naval Fate 2.0')
-    print(arguments)
+    print ("This example demonstrates basic usage of docopt")
+    print ("You can run this script manually by using:")
+
+    try:
+        # Parse arguments, use file docstring as a parameter definition
+        arguments = docopt.docopt(__doc__)
+
+        # Count is a mandatory option, caps is optional
+        disciplines = int(arguments['--disciplines'])
+        name = arguments['--name']
+
+        for i in range(count):
+            # In the definition, we expect one or more TEXT parameters
+            # Each parameter is a word, or a text in quotes: "something like this"
+            # If the user forgets about the quote, the program would print only "something"
+            # Thus, we merge all the specified parameters with space
+            text = ' '.join(arguments['TEXT'])
+            if(caps):
+                print (text.upper())
+            else:
+                print (text)
+
+    # Handle invalid options
+    except docopt.DocoptExit as e:
+        print (e.message)

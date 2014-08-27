@@ -3,19 +3,76 @@
 
 This module investigates concept used by Vinck in Sociology of Scientific work.
 It contains four functions that investigate whether research field can be
-considered as having one type of structuring.
-
+considered as having one type of structuring. It looks for four types of 
+structuring: polycentric oligarchy, partitioned beurocracy, fragmented adhocracy,
+professional adhocracy, polycentric profession, technologically integrated bureocracy 
+and conceptually integrated bureaucracy.
 
 Example:
+    is_polycentric_oligarhy('philosophy')
+    > 0.1
+    is_polycentric_oligarhy('sociology')
+    > 0.35
 
-Attributes:
+Args:
+    authors
+    data
+    concepts
+    urls
+    reading
 
-Vinck. The sociology of scientific work.
-Whitley, R. (1974), The Intellectual and Social Organization of the Sciences,
-Oxford: Oxford University Press.
+Data:
+    researcher positions : are they in power
+    schools : hard to identify, have to be based on some research
+    methods : result assessment methods
+    training proggrames : check whether they are standardised
+    focus : are they focused on analytical work
 
+    coalition_list : is discipline in coalitions
+    research resource coordination : who coordinates.
+
+    working procedures : are they common?
+    controversies : what is a framework of their solutions?
+
+    instruments : what instrumentas are used?
+    methods : what methods are used?
+    empiricity of Knowledge : is knowledge empiric
+    specificity of knowledge : is knowledge specific?
+
+    theoretical framework : is it unified? 
 
 """
+
+
+authors = ['Vinck', 'Whitley']
+concepts = [
+    'researcher position',
+    'school',
+    'researcher power',
+    'methods',
+    'training programme',
+    'standardised training programme',
+    'focus',
+    'focus on analytical work',
+
+    'coalition list',
+    'working procedures',
+    'controversies',
+    'instruments',
+    'methods',
+    'empiricity of knowledge',
+    'specificity of knowledge'.
+
+data = ['methods', 'positions', 'training programmes', 'focus', 'controversies']
+claim = 
+theory = '''
+    '''
+approach =  
+reading =
+reference = [
+    'Vinck. The sociology of scientific work.', 
+    'Whitley, R. (1974), The Intellectual and Social Organization of the Sciences Oxford: Oxford University Press']
+
 
 def is_polycentric_oligarhy(dsc):
     """ Polycentric oligarchy
@@ -53,8 +110,6 @@ def is_polycentric_oligarhy(dsc):
 def is_partinioned_beurocracy(dsc):
     """ Partitioned beurocracy 
 
-    
-
     Args:
         dsc
 
@@ -91,11 +146,11 @@ def is_fragmented_adhocracy(dsc):
 
     Theory:
         without any kind of collective direction or overall consistency, coalitions in the 
-        field are temporary. Objects are defi ned outside of the discipline according to 
+        field are temporary. Objects are defined outside of the discipline according to 
         the audience. Example: British sociology and literary studies.
         
         Examples: 
-            British sociology
+            british sociology
             literary studies.
 
     Consideration:
@@ -148,7 +203,7 @@ def is_polycentric_profession(dsc):
         contraversies_in_the_field (list) : event list, use controversy mapping 
     
     Returns:
-    polycentric_profession
+        polycentric_profession
 
     Theory:
         Polycentric profession: common working procedures act as a framework for 
@@ -174,6 +229,7 @@ def is_technologically_integrated_bureaucracy(dsc):
 
     Args:
         dsc
+
     Vars:
         set_of_instruments (list)
         same_set_of_instruments (list)
@@ -192,7 +248,7 @@ def is_technologically_integrated_bureaucracy(dsc):
     return
 
 def is_conceptually_integrated_bureaucracy(dsc):
-    """ what.
+    """ Conceptuall integrated bureaucracy
 
     
     Theory:

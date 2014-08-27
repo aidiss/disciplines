@@ -13,24 +13,10 @@ Attributes:
 """
 
 
-def what_foo_is(foo):
-    """ Does some analysis of a dataframe
-
-    Arguments:
-        foo - a string to identify.
-
-    Returns:
-    
-    Notes:
-
-    Theory:
-        Based on Klein"""
-
-
 def fit_of_perspective(dsc, perspective):
     """ what.
 
-    Longer.
+    Checks whether discipline fits perspective
 
     Args:
 

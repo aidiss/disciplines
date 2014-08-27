@@ -2,28 +2,53 @@
 # learning_styles_and_disciplinary_differences.py
 """ Learning styles and disciplinary differences by Kolb
 
-Reference:
-KOLB, D.A. (1981) Learning styles and disciplinary differences, 
-in: A. CHICKErUNG (Ed.) 77~e Modern American College (San Francisco, 
-CA, Jossey Bass). url: http://www.ltsn-01.ac.uk/static/uploads/workshop_resources/178/178_Learning_styles_and_disciplinary_difference.pdf
+Theory:
+	Later...
 
 Vars:
-discipline_type
-social_professions
-based_professions
-natural_science_and_mathematics
-humanities_and_social_science
+	author
+	concepts
+	data
+	claim
+	theory
+	approach
+	reading
 
 Analysis:
-inuiry strategy - hard, what are the evidence for those
-basic inquiry question - might be easy to find, by simple text analysis.
-basic unit of knowledge - might be easy to medium
-how knowledge is portrayed - 
-typical inquiry method - possible to get from methodological and theoretical books, but also from broader literature
+	inuiry strategy - hard, what are the evidence for those
+	basic inquiry question - might be easy to find, by simple text analysis.
+	basic unit of knowledge - might be easy to medium
+	how knowledge is portrayed - 
+	typical inquiry method - possible to get from methodological and theoretical books, but also from broader literature
 
 Notes:
-functions have to be able to turn strings to lists. Because of some entries are lists.
+	functions have to be able to turn strings to lists. Because of some entries are lists.
+	
+Other:
+	discipline_type
+	social_professions
+	based_professions
+	natural_science_and_mathematics
+	humanities_and_social_science
+
 """
+author = 'Kolb'
+authors = author
+concepts = [
+	'inquiry strategy', 
+	'basic inquiry question', 
+	'basic unit of knowledge', 
+	'typical inquiry method']
+data = []
+claim = 
+theory = '''
+    '''
+approach =  
+reading =
+reference = '''	KOLB, D.A. (1981) Learning styles and disciplinary differencesin: A. CHICKErUNG (Ed.) 77~e Modern American College (San Francisco, 
+	CA, Jossey Bass). url: http://www.ltsn-01.ac.uk/static/uploads/workshop_resources/178/178_Learning_styles_and_disciplinary_difference.pdf'''
+
+
 
 discipline_type = [
 	'inquiry strategy', 

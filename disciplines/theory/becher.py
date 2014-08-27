@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
-
 """Knowledge and culture, by disciplinary grouping
 
-
-Becher The Significance of Disciplinary differences Studies in Higher Education Volume 19, No. 2, 1994
-
-
-
-Theory:
-	Biglan :
+	Vars:
+		disciplinary_grouping (list)
+		nature_of_knowledge (list)
+		nature_of_disciplinary_culture (list)
+"""
+author = "Becher"
+authors = author
+concepts = []
+data = []
+claim = 
+theory = '''Biglan :
 	Hard pure 
 	Soft pure 
 	Hard applied 
@@ -47,14 +50,12 @@ Theory:
 	Individualistic, pturastic; loosely structured; low publication rate; personoriented.
 	Entrepreneurial, cosmopolitan; dominated by professional values; patents substitutable for publications; role oriented.
 	Outward-looking; uncertain in status; dominated by intellectual fashions; publication rates reduced by consultances; power-oriented
+    '''
+approach =  
+reading =
+source = 'Becher (1987)'
+reference = 'Becher The Significance of Disciplinary differences Studies in Higher Education Volume 19, No. 2, 1994'
 
-	Source: Becher (1987).
-
-	Vars:
-		disciplinary_grouping (list)
-		nature_of_knowledge (list)
-		nature_of_disciplinary_culture (list)
-"""
 
 # Can be separated even more. Where to put examples?
 disciplinary_grouping = [

@@ -37,8 +37,6 @@ def populate_db(reqs):
 	Args:
 		reqs : requirements for populating. Gives specific instructions which part to populate.
 	"""
-
-
 	return db 
 
 def create_db(reqs):
@@ -95,3 +93,11 @@ def create_pandas(reqs):
 		"""
 	return dataframe
 
+citation_networks = [
+	'http://arnetminer.org/citation',
+	'http://arnetminer.org/lab-datasets/citation/citation-network1.zip',
+	'http://arnetminer.org/lab-datasets/citation/citation-network2.rar',
+	'http://arnetminer.org/lab-datasets/citation/DBLP-citation-network-Oct-19.tar.gz',
+	'http://arnetminer.org/lab-datasets/citation/DBLP-citation-Feb21.tar.bz2',
+	'http://arnetminer.org/lab-datasets/citation/DBLP_citation_Sep_2013.rar',
+	'https://arnetminer.org/lab-datasets/citation/DBLP_citation_2014_May.zip']
