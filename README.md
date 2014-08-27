@@ -37,43 +37,44 @@ Applying theories to data. With having formal approach to theories and different
 Basically this module allows hypothesis testing. Allows such complicated stuff as:
 history - reconstruction of history. Should be generating text, pictures, people from the data that I have analysed. It should work when asking for "do something based on"
 
-The main packages:
-- theory
-- data
-- method
-- drawing
-- describe
-- web
+Example:
+
+from disciplines.theory import emergence
+print emergence.concepts
+> citation network
+> hierarchy
+> conferences
+
+from disciplines.data import db
+from methods import check_fit
+check_fit(emergence.concepts, db)
+> 'citation network' is available 0.3
+> 'hierarchies' are available 0.3
+> 'conferences' are available 0.1
 
 
 Development strategy
 -----
 1. Prototype with theory that describes small phenomenon.
-
-Use of examples. L
-iterature provides us with many examples. 
-- In some cases examples are just a mentioning of some discipline or subdiscipline.
-- In other cases we have examples that are described in 5 to 10 sentences. 
-- In some unique casese we have long descriptions of each discipline (Small, history of social sciences)
-
-We have a strategy:
-1. List all disciplines and to which theories (including methods) are they related.
-2. List all disciplines that have description
-3. Tackle big descriptions by using earlier findings and NLP (NLTK).
-4. Reverse findings on less documented cases.
-5. Estimate or build a strategy for developing rarely mentioned cases.
-6. Based on findings of stages 1 to 5, investigate disciplinary formations not mentioned in theory.
+2. Use of examples.
+	- In some cases examples are just a mentioning of some discipline or subdiscipline.
+	- In other cases we have examples that are described in 5 to 10 sentences. 
+	- In some unique casese we have long descriptions of each discipline (Small, history of social sciences)
+3. Reconstruct, deconstruct and forecast
+	1. List all disciplines and to which theories (including methods) are they related.
+	2. List all disciplines that have description
+	3. Tackle big descriptions by using earlier findings and NLP (NLTK).
+	4. Reverse findings on less documented cases.
+	5. Estimate or build a strategy for developing rarely mentioned cases.
+	6. Based on findings of stages 1 to 5, investigate disciplinary formations not mentioned in theory.
 
 Dependencies
 -----------
 
 Disciplines uses a number of open source projects to work properly:
-
+* [sqlite3]
 * [pandas]
 * [networkx]
-* [matplotlib]
-* [bokeh]
-* [sqlite3]
 
 Installation
 --------------
