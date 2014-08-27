@@ -38,19 +38,18 @@ Basically this module allows hypothesis testing. Allows such complicated stuff a
 history - reconstruction of history. Should be generating text, pictures, people from the data that I have analysed. It should work when asking for "do something based on"
 
 Example:
-
-from disciplines.theory import emergence
-print emergence.concepts
-> citation network
-> hierarchy
-> conferences
-
-from disciplines.data import db
-from methods import check_fit
-check_fit(emergence.concepts, db)
-> 'citation network' is available 0.3
-> 'hierarchies' are available 0.3
-> 'conferences' are available 0.1
+    from disciplines.theory import emergence  # imports emergence theory
+    print emergence.concepts  # prints concepts used in theory
+    > citation network 
+    > hierarchy
+    > conferences
+    
+    from disciplines.data import db
+    from methods import check_fit 
+    check_fit(emergence.concepts, db)  # checks whether available data is fit for working with theory
+    > 'citation network' is available 0.3
+    > 'hierarchies' are available 0.3
+    > 'conferences' are available 0.1
 
 
 Development strategy
