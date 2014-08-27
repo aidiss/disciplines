@@ -38,6 +38,7 @@ Basically this module allows hypothesis testing. Allows such complicated stuff a
 history - reconstruction of history. Should be generating text, pictures, people from the data that I have analysed. It should work when asking for "do something based on"
 
 Example:
+
     from disciplines.theory import emergence  # imports emergence theory
     print emergence.concepts  # prints concepts used in theory
     > citation network 
