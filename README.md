@@ -87,8 +87,3 @@ MIT
 Further reading
 ---
 [Documentation](doc/docs.md)
-
-	[Theory](doc/theory.md)
-	[Data](doc/data.md)
-	[Disciplines](doc/disciplines.md)
-	[Method](doc/method.md)
