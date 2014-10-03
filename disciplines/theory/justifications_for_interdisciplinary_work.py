@@ -32,11 +32,10 @@ concepts = ['career paths', # : (remember biology studies, posted in Eurodoc or 
     'partitions between sciences',  #where are those? how are they related to borders?
    ' field work'] #: was is a case?]
 data = []
-claim = 
+claim = []
 theory = ''' '''
-approach =  
-reading =
-
+approach = []
+reading = []
 
 def is_justification_scientific_creativity():
     """ Scientific creativity.

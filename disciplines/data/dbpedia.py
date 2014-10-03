@@ -1,13 +1,23 @@
 from rdflib import Graph, URIRef
+'''
+This module is dedicated to getting data from dbpedia
 
+The data we get is based about few cattegories: learned societies, 
+membership of learned societies, academic disciplines and many more.
+This is done by using rdflib
+'''
 
-
+learned_societies = ''
+members_of_learned_societies = ''
+academic_disciplines = ''
+'''
 url = 'http://dbpedia.org/page/Category:Learned_societies'
+urls = ['http://dbpedia.org/page/Category:Learned_societies',
+	'http://dbpedia.org/resource/Category:Learned_societies']
+not_interesting_urls = []
 
-url1 = 'http://dbpedia.org/resource/Category:Learned_societies'
 g = Graph()
 g.parse(url)
-
 mylist = []
 for x in g:
     cond1 = 'http://dbpedia.org/' in x[0]
@@ -27,7 +37,7 @@ url = 'http://dbpedia.org/page/Category:Members_of_learned_societies'
 g = Graph()
 url = 'http://dbpedia.org/page/Category:Academic_disciplines'
 g.parse(url)
-
+'''
 
 '''
 Other:

@@ -63,28 +63,6 @@ approach =  '''
     constructing the overarching algorithms.
     Functionality: identification of turning points of development of a discipline 
     by identifying NPNOC, people, conferences and etc date is the prime focus.
-    
-
-    Ideas:
-    if nodal_point(citation_network):
-        researchers = get_researchers()
-        emergence_stage = 1
-
-    if special_issue in primary_journal:
-        emergence_stage = 2
-    if cocitation_cluster organize_little_conferences:
-        emergence_stage = 2
-
-    if further_conferences or regular_exchange_of_pre_prints:
-        emergence_stage = 3
-
-    if learned_society(researcher_list):
-        emergence_stage = 4 
-    if primary_journal(researcher_list):
-        emergence_stage = 4 
-
-    if hierarchy_of_authority:
-        emergence_stage = 5
     '''
 
 def what_emergence_state(dsc):
@@ -99,21 +77,36 @@ def what_emergence_state(dsc):
 
     Notes:
     """
-    return
+    if nodal_point(citation_network):
+        return 1
+
+    elif (special_issue in primary_journal) and (who_organize_little_conferences == cocitation_cluster):
+        return  2
+
+    if further_conferences or regular_exchange_of_pre_prints:
+        return 3
+
+    if learned_society(researcher_list) and primary_journal(researcher_list):
+        return 4 
+
+    if hierarchy_of_authority > 0.8:
+        return 5 
 
 def is_emergence_state(dsc, stage):
     """ Checks for state of emergence of a discipline
-
-    Runs other functions that looks for different aspects
 
     Args:
         dsc : discipline
 
     Returns:
+        True or False
 
     Notes:
     """
-    return
+    if condition:
+        return True
+    elif condition1:
+        return False
 
 
 def observe_nodal_points(network_of_citation, stage):
@@ -136,13 +129,30 @@ def observe_nodal_points(network_of_citation, stage):
     stage
     return cliques
 
-def get_conferences_organized_by_cluster(researcher_list):
+def get_conferences_organized_by_cluster(researcher_list, testing=False):
     """ Conferences organized by cluster of researchers 
 
     Researchers are looking in some ways.
     Args:
+
+    Example:
+        Scientific Committee of 4S anual meeting at http://www.4sonline.org/meeting
+            
     """
     researcher_list
+    if testing == True:
+        researcher_list = ['Hebe Vessuri', ['Instituto Venezolano de Investigaciones Científicas', 'Universidad Nacional Autónoma de México'], 
+            'Hernán Thomas', ['Universidad Nacional de Quilmes'], 
+            'Olga Restrepo', ['Universidad Nacional de Colombia'], 
+            'Antonio Arellano', ['Universidad Autónoma del Estado de México'], 
+            'Noela Invernizzi', ['Universidade Federal do Paraná'], 
+            'Rosalba Casas', ['Universidad Nacional Autónoma de México'], 
+            'Fernando Domínguez-Rubio', ['University of California San Diego'], 
+            'Javier Lezaún', ['University of Oxford'], 
+            'Vincenzo Pavone', ['Consejo Superior de Investigaciones Científicas'], 
+            'Anita Say Chan', ['University of Illinois at Urbana-Champaign'],
+            'María Puig de la Bellacasa', ['Leicester']]
+    
     conference_list = ['Interdisciplinarity: How to make it work', 'Academic demarcations']
 
     return conference_list
@@ -343,6 +353,11 @@ def recreate_emerge(discipline):
         author - 
         publication -
         data - """
+        data 
+        graph 
+        author 
+        publication
+        return
 
     def add_organizer(data, graph, event, organizer):
         """adds stuff to a graph,
@@ -354,7 +369,7 @@ def recreate_emerge(discipline):
         author - 
         publication -
         data - """
-
+        return
 
     def add_authors(data, filters):
         """ Adds all authors that pass the filters"""

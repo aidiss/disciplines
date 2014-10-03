@@ -33,11 +33,11 @@ author = 'Vinck'
 authors = author
 concepts = []
 data = []
-claim = 
+claim = []
 theory = '''
     '''
-approach =  
-reading =
+approach =  []
+reading = []
 disciplines_mentioned = [
     'molecular biology',
     'cellular biology',
@@ -62,7 +62,7 @@ def border_wars():
             molecular biology and cellular biology"""
 
     example_disciplines = ['molecular biology', 'cellular biology']
-    border = 
+    border = []
     return
 
 def wars_of_conquest():
@@ -149,9 +149,9 @@ def economic_war():
     """
     example_disciplines = ['botany', 'zoology', 'physiology', 'molecular biology']
     example_action = [
-        ('molecular biology', 'botany', economic_war:True)
-        ('molecular biology', 'zoology', economic_war:True)
-        ('molecular biology', 'physiology', economic_war:True)]
+        ('molecular biology', 'botany', {'economic_war':True})
+        ('molecular biology', 'zoology', {'economic_war':True})
+        ('molecular biology', 'physiology', {'economic_war':True})]
     return
 
 def psychological_war_or_war_of_attrition():

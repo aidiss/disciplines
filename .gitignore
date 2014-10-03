@@ -52,3 +52,10 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+secret/
+htmls/
+xmls/
+output/
+downloads/
+.ipynb_checkpoints/
+data/xlsx/

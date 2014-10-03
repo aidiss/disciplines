@@ -1,5 +1,7 @@
 #conference.py
-"""This gets info about conferences"""
+"""conferences
+
+This module deals with getting info about conferences"""
 
 listings = ['grc', 'faseb', 'all_conferences', 'conference_alerts', 'wikicfp']
 
@@ -229,6 +231,7 @@ def conference_alerts():
 		'Surgery']},
 
 	{'Animal Sciences':['Veterinary Science']}]
+	return tree
 
 def wikicfp():
 	url = 'http://www.wikicfp.com/cfp/call?conference=databases'

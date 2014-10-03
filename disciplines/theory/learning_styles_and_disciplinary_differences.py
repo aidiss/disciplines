@@ -40,11 +40,11 @@ concepts = [
 	'basic unit of knowledge', 
 	'typical inquiry method']
 data = []
-claim = 
+claim = []
 theory = '''
     '''
-approach =  
-reading =
+approach = []
+reading = []
 reference = '''	KOLB, D.A. (1981) Learning styles and disciplinary differencesin: A. CHICKErUNG (Ed.) 77~e Modern American College (San Francisco, 
 	CA, Jossey Bass). url: http://www.ltsn-01.ac.uk/static/uploads/workshop_resources/178/178_Learning_styles_and_disciplinary_difference.pdf'''
 

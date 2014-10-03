@@ -264,8 +264,8 @@ def regimes_for_knowledge_production(dsc): #returns a dictionary of regimes and 
 
 
     """
-    is_regime_disciplinary(dsc):
-    is_regime_transitory(dsc):
-    is_regime_utilitarian(dsc):
-    is_regime_transverse(dsc):
+    is_regime_disciplinary(dsc)
+    is_regime_transitory(dsc)
+    is_regime_utilitarian(dsc)
+    is_regime_transverse(dsc)
     return

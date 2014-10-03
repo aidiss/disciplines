@@ -2,27 +2,26 @@
 #data.py
 """This package deals with number of data issues
 
-Getting data
-Formatting data
-Collecting urls
+The package wraps up different modules that can be cattegorized as:
+	- Links to data
+	- Getting data
+	- Formatting/structuring data
 
 A number of functions are created to get data from online repositories. These functions are in two profession_types:
 ready data - one that is formated well and prepared for usage, like CSV, XML and etc. And scrapping techniques.
 Data is being transformed into one of our 
 
 The data is stored and manipulated in three data types:
-	SQL (sqlite) is used for storing large quantities of that have well defined form and structure.
-	Pandas powered arrays and dataframes.
-
+	- Relational database - is used for storing large quantities of that have well defined form and structure.
+	- Ontology - based on networkx.
+	- Pandas arrays and dataframes.
 
 Dependencies:
-sqlite3
-pandas
-networkx
-
-
+	sqlite3
+	pandas
+	networkx
 """
-datatypes = ['person', 'profession' 'event', 'publication', 'concept', 'definition', 'organization', 'disciplines']
+datatypes = ['person', 'profession', 'event', 'publication', 'concept', 'definition', 'organization', 'disciplines']
 profession_types = ['researcher', 'technician'] #more in one theorie covered by Vinck
 event_types = ['conference', 'workshop', 'summerschool']
 publication_types = ['book', 'blog', 'article', 'proceeding']

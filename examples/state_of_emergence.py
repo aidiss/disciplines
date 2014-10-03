@@ -1,4 +1,4 @@
-State of emergence.
+"""State of emergence.
 
 At what stage of emergence services sciences are
 First, nodal point in emergence of disciplines.
@@ -13,3 +13,4 @@ In our case works of Lydersdorf fits rather well. Still, we have to agree that w
 hope or to ground out understanding.
 
 Estimations are important.
+"""

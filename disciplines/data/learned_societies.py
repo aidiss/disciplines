@@ -1,25 +1,35 @@
 #learned_societies.py
-""" List all learned societies"""
+"""DEPRECATED
+THIS MODULE COULD BECOME DESCRIPTION OF LEARNED SOCIETIES CLASS.
+CURRENTLY GATHERED INFORMATION HAS TO BE STORRED SOMEWHERE. JSON?
+Module dedicated to getting data about learned societies
 
+The module is connecting to different websites that unite different
+learned societies.
 
-learned_societies_urls = {'url': 'http://en.wikipedia.org/wiki/Category:Learned_societies',
-	'url' : 'http://en.wikipedia.org/wiki/Category:Facilities_and_organizations_of_science',
-	'url' : 'http://en.wikipedia.org/wiki/Category:Scientific_societies'}
+Currently implemented things:
+	- Scrapping of ACLS website 
 
+Urls:
+	- Urls to dbpedia are here. They will be parsed using dbpedia module."""
+
+learned_societies_urls = [{'url': 'http://en.wikipedia.org/wiki/Category:Learned_societies'},
+	{'url' : 'http://en.wikipedia.org/wiki/Category:Facilities_and_organizations_of_science'},
+	{'url' : 'http://en.wikipedia.org/wiki/Category:Scientific_societies'}]
 
 url = 'https://www.acls.org/societies/'
 
-learned_societies = [
+acls_members = [
 	['African Studies Association',	'https://www.acls.org/societies/societies.aspx?sid=363E4D14-98A2-DB11-A735-000C29\03E717',''],
 	['American Academy of Arts and Sciences',	'https://www.acls.org/societies/societies.aspx?sid=08895C50-C9A2-DB11-A735-000C2903E717',''],
 	['American Academy of Religion'	,'https://www.acls.org/societies/societies.aspx?sid=0B895C50-C9A2-DB11-A735-000C2903E717',''],
-	['American Anthropological Association',	'https://www.acls.org/societies/societies.aspx?sid=0E895C50-C9A2-DB11-A735-000C2903E717',''],
-	['American Antiquarian Society',	'https://www.acls.org/societies/societies.aspx?sid=11895C50-C9A2-DB11-A735-000C2903E717',''],
-	['American Association for the History of Medicine',	'https://www.acls.org/societies/societies.aspx?sid=5405940B-81A3-DB11-A735-000C2903E717',''],
+	['American Anthropological Association', 'https://www.acls.org/societies/societies.aspx?sid=0E895C50-C9A2-DB11-A735-000C2903E717',''],
+	['American Antiquarian Society', 'https://www.acls.org/societies/societies.aspx?sid=11895C50-C9A2-DB11-A735-000C2903E717',''],
+	['American Association for the History of Medicine', 'https://www.acls.org/societies/societies.aspx?sid=5405940B-81A3-DB11-A735-000C2903E717',''],
 	['American Comparative Literature Association',	'https://www.acls.org/societies/societies.aspx?sid=2F895C50-C9A2-DB11-A735-000C2903E717',''],
-	['American Dialect Society',	'https://www.acls.org/societies/societies.aspx?sid=38895C50-C9A2-DB11-A735-000C2903E717',''],
-	['American Economic Association',	'https://www.acls.org/societies/societies.aspx?sid=3B895C50-C9A2-DB11-A735-000C2903E717',''],
-	['American Folklore Society',	'https://www.acls.org/societies/societies.aspx?sid=3E895C50-C9A2-DB11-A735-000C2903E717',''],
+	['American Dialect Society', 'https://www.acls.org/societies/societies.aspx?sid=38895C50-C9A2-DB11-A735-000C2903E717',''],
+	['American Economic Association', 'https://www.acls.org/societies/societies.aspx?sid=3B895C50-C9A2-DB11-A735-000C2903E717',''],
+	['American Folklore Society', 'https://www.acls.org/societies/societies.aspx?sid=3E895C50-C9A2-DB11-A735-000C2903E717',''],
 	['American Historical Association',	'https://www.acls.org/societies/societies.aspx?sid=41895C50-C9A2-DB11-A735-000C2903E717',''],
 	['American Musicological Society',	'https://www.acls.org/societies/societies.aspx?sid=4A895C50-C9A2-DB11-A735-000C2903E717',''],
 	['American Numismatic Society', 'https://www.acls.org/societies/societies.aspx?sid=4D895C50-C9A2-DB11-A735-000C2903E717',''],
@@ -81,58 +91,7 @@ learned_societies = [
 	['Society of Architectural Historians'	,'https://www.acls.org/societies/societies.aspx?sid=AF1B3B6E-C9A2-DB11-A735-000C2903E717',''],
 	['Society of Biblical Literature',	'https://www.acls.org/societies/societies.aspx?sid=B21B3B6E-C9A2-DB11-A735-000C2903E717',''],
 	['Society of Dance History Scholars',	'https://www.acls.org/societies/societies.aspx?sid=B51B3B6E-C9A2-DB11-A735-000C2903E717',''],
-	['World History Association',	'https://www.acls.org/societies/societies.aspx?sid=B1F02D93-E77B-E011-B81F-000C293A51F7']]
-
-
-example = '''
-American Society of Comparative Law
-
-Founded: 1951     Admitted to ACLS: 1995
-
-The purpose of the society, formerly, The American Association for the Comparative Study of Law, Inc., incorporated in New York in 1951, "is to promote the comparative study of law and the understanding of foreign legal systems; to establish, maintain and publish without profit a comparative law journal; and to provide for research and the publication without profit of writings, books, papers and pamphlets relating to comparative, foreign or private international law."
-
-CAO Representative and Society Contact
-James A. R. Nafziger
-Chief Administrative Officer
-American Society of Comparative Law
-jnafzige@willamette.edu
-Willamette University
-Delegate
-John C. Reitz
-University of Iowa
-john-reitz@uiowa.edu
-term ends 12/31/2015
-
-President
-H. Patrick Glenn
-McGill University, Canada
-patrick.glenn@mcgill.ca
-Membership:
-Individual: 97
-'''
-
-'''
-So, we have 
-name
-when it was Founded
-data of admition to ACLS
-The aim of society
-
-Representative and conts:
-name,
-title,
-LS name,
-address.
-
-President
-name
-institutoin,m country,
-address
-Membership type
-membership count
-'''
-
-
+	['World History Association',	'https://www.acls.org/societies/societies.aspx?sid=B1F02D93-E77B-E011-B81F-000C293A51F7', '']]
 
 def initiative_for_science_in_europe():
 	'''ISE'''
@@ -154,7 +113,7 @@ def initiative_for_science_in_europe():
 		['European Society for Gene and Cell Therapy' ,'ESGCT','http://www.esgct.eu/',''],
 		['European Society of Endocrinology', 'ESE', 'http://www.ese-hormones.org/',''],
 		['European Sociological Association', 'ESA', 'http://www.europeansociology.org/',''],
-		['EuroScience',None, 'http://www.euroscience.org/',''],
+		['EuroScience', None, 'http://www.euroscience.org/'],
 		['Federation of European Biochemical Societies', 'FEBS', 'http://www.febs.org/',''],
 		['Pan-European Region of the International Association for Dental Research' 'IADR', 'http://www.iadr.com/']]
 
@@ -170,17 +129,12 @@ def initiative_for_science_in_europe():
 		['European Neutron Scattering Association', 'ENSA','http://www.unizar.es/ensa/'],
 		['Informatics Europe','IE','http://www.informatics-europe.org/'],
 		['Young Academy of Europe','YAE','http://www.yacadeuro.org/']]
-
-
-
-
+	return members, observers
+	
 britsh_LS = ['https://www.britac.ac.uk/links/uksahss.asp?Letter=A', 'https://www.britac.ac.uk/links/uksahss.asp?Letter=B']
 letters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
 for letter in letters:
 	url = 'https://www.britac.ac.uk/links/uksahss.asp?Letter={}'.format(letter)
 
-
-
-
-
-
+for x in acls_members:
+	print(x[1])

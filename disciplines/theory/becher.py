@@ -10,7 +10,7 @@ author = "Becher"
 authors = author
 concepts = []
 data = []
-claim = 
+claim = []
 theory = '''Biglan :
 	Hard pure 
 	Soft pure 
@@ -33,7 +33,7 @@ theory = '''Biglan :
 	Disciplinary grouping 
 
 	Pure sciences (e.g. physics): 'hard-pure'
-	Humanities (e.g. history) and pure social sciences (e.g. anthropology): %oft-pure'
+	Humanities (e.g. history) and pure social sciences (e.g. anthropology): soft-pure'
 	Technologies (e,g, mechanical engineering):'hard-applied'
 	Applied social sciences (e.g. education):'soft-applied'
 
@@ -51,8 +51,8 @@ theory = '''Biglan :
 	Entrepreneurial, cosmopolitan; dominated by professional values; patents substitutable for publications; role oriented.
 	Outward-looking; uncertain in status; dominated by intellectual fashions; publication rates reduced by consultances; power-oriented
     '''
-approach =  
-reading =
+approach =  []
+reading = []
 source = 'Becher (1987)'
 reference = 'Becher The Significance of Disciplinary differences Studies in Higher Education Volume 19, No. 2, 1994'
 

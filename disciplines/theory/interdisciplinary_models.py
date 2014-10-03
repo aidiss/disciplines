@@ -11,11 +11,11 @@ examples1"""
 
 author = 'Vinck'
 models = ['complementary', 'circulation', 'fusion', 'confrontation']
-concepts =
-data = 
+concepts = []
+data = []
 examples = [
-    'Pre-history','anatomy', 'technology', 'ecology', 'genetics', 'ethology', 'psychology', 'sociology', 'anthropology', 'chemistry', 'physics', 'climatology', 'botany', 'zoology']
-    'chemistry', 'experimental physics']
+    ['Pre-history','anatomy', 'technology', 'ecology', 'genetics', 'ethology', 'psychology', 'sociology', 'anthropology', 'chemistry', 'physics', 'climatology', 'botany', 'zoology'],
+    ['chemistry', 'experimental physics']]
 
 examples1 = ['ecology', 
              'botany', 
@@ -89,40 +89,40 @@ def is_model_circulation(dsc):
         return
 
 def is_model_fusion(dsc):
+    """
+    Theory: 
+        The fusion model: grouping together of researchers working on the same object,
+        attenuating the distinctions between the initial disciplines. Ecology is an example of a
+        speciality born from the merging of several types of knowledge around an object and
+        concepts such as niche and ecosystem. It brings together knowledge from botany,
+        zoology, pedology and orography. The new speciality reconfi gures the identity of
+        researchers around a new reference. In other cases, this reconfiguration only leads to a
+        vague assembly that fails to be recognised from an institutional point of view.
+        Examples:
+            ecology, 
+            botany, 
+            zoology, 
+            pedology and
+            orography.
         """
-        Theory: 
-            The fusion model: grouping together of researchers working on the same object,
-            attenuating the distinctions between the initial disciplines. Ecology is an example of a
-            speciality born from the merging of several types of knowledge around an object and
-            concepts such as niche and ecosystem. It brings together knowledge from botany,
-            zoology, pedology and orography. The new speciality reconfi gures the identity of
-            researchers around a new reference. In other cases, this reconfi guration only leads to a
-            vague assembly that fails to be recognised from an institutional point of view.
-            Examples:
-                ecology, 
-                botany, 
-                zoology, 
-                pedology and
-                orography.
-        """
-        return
-    
     def is_approach_recognised_by_institution(approach, institution):
-        """Approach recognition
-        """
+        """Approach recognition    """
         return
+    return
+    
+
 
 def is_model_confrontation(dsc):
-        """Confrontation
+    """Confrontation
 
-        Theory:
-            The confrontation model: where existing disciplines enter into debate. The, at
-            times, cutting interactions have a backlash effect on the disciplines: repatriation of joint
-            productions and shifts during confrontations.
-        """
-        return
-    
+    Theory:
+        The confrontation model: where existing disciplines enter into debate. The, at
+        times, cutting interactions have a backlash effect on the disciplines: repatriation of joint
+        productions and shifts during confrontations.
+    """
     def are_confronting(dsc_list):
         """
         """
         return
+    return
+    

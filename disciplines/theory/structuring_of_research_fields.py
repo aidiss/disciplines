@@ -61,14 +61,14 @@ concepts = [
     'instruments',
     'methods',
     'empiricity of knowledge',
-    'specificity of knowledge'.
+    'specificity of knowledge']
 
 data = ['methods', 'positions', 'training programmes', 'focus', 'controversies']
-claim = 
+claim = []
 theory = '''
     '''
-approach =  
-reading =
+approach =  []
+reading = []
 reference = [
     'Vinck. The sociology of scientific work.', 
     'Whitley, R. (1974), The Intellectual and Social Organization of the Sciences Oxford: Oxford University Press']

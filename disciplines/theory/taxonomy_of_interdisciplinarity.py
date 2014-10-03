@@ -451,7 +451,7 @@ def is_pluridisciplinary(what, by_whom):
     return
 
 def degree_of_collaboration():
-""" returns shared or cooperative """
+    """ returns shared or cooperative """
     return
 
 def is_degree_of_collaboration_shared():
