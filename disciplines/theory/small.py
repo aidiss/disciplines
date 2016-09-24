@@ -42,38 +42,41 @@ such, important factors in the development of the latter. The speci¢c
 extent to which factors in each arena a¡ect the conception of the new
 intellectual enterprise can only be determined empirically.'''
 
-local_institutional_arena = '''
-	involving local
-	university administrators, students, and faculty of di¡erent departments,
-	from which they gain institutional support and capital resources
-	'''
-players = [
-	'university_administrators', 
-	'students', 
-	'faculty_of_different_departments'
-	]
-aims = [
-	'institutional support'
-	'capital resources'
-	]
+article = {
+    'concepts': {
+        'local_institutional_arena':
+            {'description': '''
+					involving local
+					university administrators, students, and faculty of di¡erent departments,
+					from which they gain institutional support and capital resources''',
+             'players': [
+                 'university_administrators',
+                 'students',
+                 'faculty_of_different_departments'
+             ],
+             'aims': [
+                 'institutional support'
+                 'capital resources'
+             ]},
 
-wider_academic_arena = '''
-	wider academic arena, involving scholars in African-American Studies
-	and other disciplines, from which they gain academic recognition and
-	intellectual legitimacy; 
-	'''
-people = [
-	'scholars in African-American Studies', 'other disciplines(, scholars of)'
-	]
-fight_for = [
-	'academic recognition',
-	'intellectual recognition'
-	]
+        'wider_academic_arena':
+            {'description': '''
+					wider academic arena, involving scholars in African-American Studies
+					and other disciplines, from which they gain academic recognition and
+					intellectual legitimacy;''',
+             'people': [
+                 'scholars in African-American Studies', 'other disciplines(, scholars of)'
+             ],
+             'aims': [
+                 'academic recognition',
+                 'intellectual recognition'
+             ]},
 
-public_arena = '''... and a much wider public arena, involving
-	both politically active black communities and larger constituencies
-	of journalists, philanthropists, and politicians, from which they gain
-	political support, as well as capital.
-	'''
-players = ['politically active black communities', 'journalists', 'philanthropists', 'politicians']
-fightsfor = ['political support', 'capital']
+        'public_arena': {'description': '''... and a much wider public arena, involving
+				both politically active black communities and larger constituencies
+				of journalists, philanthropists, and politicians, from which they gain
+				political support, as well as capital.
+				''',
+                         'players': ['politically active black communities', 'journalists', 'philanthropists',
+                                     'politicians'],
+                         'aims': ['political support', 'capital']}}}

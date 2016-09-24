@@ -13,5 +13,3 @@ figure2 = dfs[2]
 figure3 = dfs[3]
 table4 = dfs[4]
 table5 = dfs[5]
-
-print(table2)

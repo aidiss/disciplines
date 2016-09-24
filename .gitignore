@@ -59,3 +59,34 @@ output/
 downloads/
 .ipynb_checkpoints/
 data/xlsx/
+.idea/
+scripts/discipline db build_based on wiki xml dump.py
+disciplines (2).sublime-workspace
+disciplines.sublime-project
+disciplines.sublime-workspace
+disciplines/data/conferences/List of disciplines/code.py
+disciplines/data/conferences/List of disciplines/pages that contain disciplines.txt
+disciplines/theory/An_Analysis_of_Research_in_Computing_Disciplines.py
+disciplines/theory/As_can_be_seen.py
+disciplines/theory/Data_Mining_Technology_across_Academic_Disciplines.py
+disciplines/theory/Disciplines_Research_Fields_and_their_Boundaries.py
+disciplines/theory/Interstitial_Organizations_as_Conversational_Bridg
+disciplines/theory/Interstitial_Organizations_as_Conversational_Bridges.py
+disciplines/theory/Is_science_becoming_more_interdisciplinary.py
+disciplines/theory/Map_of_Altruism_and_a Map_of_Science.py
+disciplines/theory/Map_of_Complexity_Science.py
+disciplines/theory/Mapping_Graphene_Science_and_Development.py
+disciplines/theory/Phylomemetic_Patterns_in_Science_Evolution.py
+disciplines/theory/The_Politics_of_Disciplinary_Advantage.py
+disciplines/theory/Visual_Funding_Portfolios.py
+disciplines/theory/defining_interdisciplinary_studies.py
+disciplines/theory/discipline_and_bounding.py
+disciplines/theory/linguistic_contect_of_citations.py
+disciplines/theory/mapping_disciplines.py
+doc/testing/
+ipynb/braintorm.ipynb
+looking_for_cycles.py
+mongo_db.ipynb
+outputbetweenness_centrality.json
+readme.txt
+tests/fixtures/

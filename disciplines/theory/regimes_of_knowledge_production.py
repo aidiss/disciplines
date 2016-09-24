@@ -57,7 +57,7 @@ concepts = [
     'dissemination spaces',
     'diversity of dissemination spaces',
     'relation to other regimes'] #: was is a case?]
-data = ['professions', 'trips','patents','research focus']
+data = ['professions', 'trips', 'patents', 'research focus']
 claim = ''
 theory = ''' '''
 approach = ''

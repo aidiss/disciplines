@@ -5,15 +5,15 @@
 
 
 name_dict = {
-    'M' : 'Mathematics ',
+    'M': 'Mathematics',
     'B' : 'Biology',
-    'CS' : 'Computer science ',
+    'CS': 'Computer science',
     'I' : 'Infectious disease',
-    'P' : 'Physics ',
+    'P': 'Physics',
     'MD' : 'Medical specialties',
-    'PC' : 'Physical chemistry ',
+    'PC': 'Physical chemistry',
     'HS' : 'Health services',
-    'C' : 'Chemistry ',
+    'C': 'Chemistry',
     'N' : 'Brain research (neuroscience)', #two names
     'E' : 'Engineering',
     'PS' : 'Psychology/psychiatry',

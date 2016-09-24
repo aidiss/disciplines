@@ -4,7 +4,7 @@ Cluster # ISI subject categories
 
 """
 columns = [
-	{['computer science', 'informatics']:[
+    {'computer science, informatics': [
 		'Automation & Control Systems',
 		'Computer Science, Artificial Intelligence',
 		'Computer Science, Cybernetics',
@@ -28,7 +28,7 @@ columns = [
 		'Telecommunications',
 		'Transportation',
 		'Transportation Science & Technology']},
-	{['chemistry', 'physics', 'engineering']:
+    {'chemistry, physics, engineering':
 		['Acoustics',
 		'Astronomy & Astrophysics',
 		'Biochemical Research Methods',
@@ -69,7 +69,7 @@ columns = [
 		'Polymer Science',
 		'Spectroscopy',
 		'Thermodynamics']},
-	{['biology', 'Environmental science', 'geography']:[
+    {'biology, Environmental science, geography': [
 		'Agricultural Engineering',
 		'Agriculture, Soil Science',
 		'Biodiversity Conservation',
@@ -106,7 +106,7 @@ columns = [
 		'Toxicology',
 		'Water Resources',
 		'Zoology']},
-	{['Agriculture', 'food science']:[
+    {'Agriculture, food science': [
 		'Agriculture, Dairy & Animal Science',
 		'Agriculture, Multidisciplinary ',
 		'Agronomy ',
@@ -123,7 +123,7 @@ columns = [
 		'Tropical Medicine',
 		'Veterinary Sciences',
 		'Virology']},
-	{['life science', 'medical science']:[
+    {'life science, medical science': [
 		'Allergy',
 		'Anatomy & Morphology',
 		'Andrology',
@@ -167,7 +167,7 @@ columns = [
 		'Surgery',
 		'Transplantation',
 		'Urology & Nephrol']},
-	{['sociology', 'economics', 'political science']:[
+    {'sociology, economics, political science': [
 		'Agricultural Economics & Policy',
 		'Anthropology',
 		'Area Studies',
@@ -208,8 +208,8 @@ columns = [
 		'Social Work',
 		'Sociology',
 		'Urban Studies',
-		'Women’s Studies']},
-{['psychology', 'education']:[
+        "Women's Studies"]},
+    {'psychology, education': [
 		'Applied Linguistics',
 		'Behavioral Sciences',
 		'Clinical Neurology',

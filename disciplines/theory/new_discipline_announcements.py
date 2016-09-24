@@ -35,9 +35,6 @@ while curr_row < num_rows:
 			print('	', cell_type, ':', cell_value)
 '''
 df_all = pd.read_excel(url, sheetname='All')
-print(df_all)
-
 names_of_all_sheets = [
-	'Emergence', 'All', 'Selected',	'Extra', 
-	'Sheet1', 'Abstracts', 'Liles', 'Ziman'
-					   ]
+    'Emergence', 'All', 'Selected', 'Extra',
+    'Sheet1', 'Abstracts', 'Liles', 'Ziman']
