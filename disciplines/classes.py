@@ -428,7 +428,7 @@ class Discipline(object):
         Returns:
             Description of return
         """
-        E
+
         return
 
     def get_related_disciplines(self):
