@@ -12,20 +12,22 @@ applied, life - non life.
 It is also possible to cattegorize people, learned_societies and etc.
 """
 
+
 def import_dataset(dataset):
     pass
-    
+
 
 def classify_disciplines(list_of_disciplines):
-    """This list cattegories disciplines. Many types of information can 
-be lodead into this function:
+    """
+    This list cattegories disciplines. Many types of information can be lodead into this function:
     when it was founded, how many journals, how many articles, how many 
     researches, how many programmes and etc.
-    
-        
-from sklearn import datasets
-iris = datasets.load_iris()
-digits = datasets.load_digits()
+
+    For example:
+
+        from sklearn import datasets
+        iris = datasets.load_iris()
+        digits = datasets.load_digits()
 """
 
 

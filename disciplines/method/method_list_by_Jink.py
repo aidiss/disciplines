@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-#method_list_by_Jink.py
+# method_list_by_Jink.py
 
-method_list_by_Jink = ['action research',
+method_list_by_Jink = [
+	'action research',
 	'analysis of variance',
 	'analytic induction',
 	'anti-racism research',
@@ -415,8 +416,6 @@ from_some_book = [
 	'bias']
 
 
-
-
 """
 	'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for'
 """
@@ -443,14 +442,14 @@ subjects = [
 	'19', 'Studies in Creative Arts and Writing (4,282)',
 	'20', 'Language, Communication and Culture (1,983)',
 	'21', 'History and Archaeology (2,180)',
-	'22', 'Philosophy and Religious Studies (993)']]
+	'22', 'Philosophy and Religious Studies (993)']
 
 
 
-url = 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/01'
-url = 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/{}'.format(num)
-url = 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/{}{}'.format(num, subnum)
-url = 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/{}{}{}'.format(number,subnum, subsubnum)
+url= 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/01'
+url= 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/{}'.format(num)
+url= 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/{}{}'.format(num, subnum)
+url = 'http://ecite.utas.edu.au/rmdb/ecite/q/ecite_view_subject_for/{}{}{}'.format(number, subnum, subsubnum)
 
 '''
 'li', 'style':"font-size:10pt"

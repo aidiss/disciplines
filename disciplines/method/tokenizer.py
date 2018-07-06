@@ -20,7 +20,7 @@ from nltk.book import text4
 text4.concordance("vote")
 text4.similar("vote")
 text4.collocations()
-texts()
+
 
 '''
 from nltk.corpus import shakespeare
@@ -31,31 +31,30 @@ ratings_cfd.conditions()
 #ratings.tabulate()
 '''
 
-
+discipline_name = 'philosophy'
 tokenizer = [
-	["neighboring disciplines", None],
-	["perspectives", discipline_name],
-	["perspective on",	discipline_name],
-	["perspectives on",	discipline_name],
-	["approach to",	discipline_name],
-	["methods used by",	discipline_name],
-	["defines", discipline_name],
-	["needs to acknowledge", discipline_name],
-	["acknowledges", discipline_name],
+    ["neighboring disciplines", None],
+    ["perspectives", discipline_name],
+    ["perspective on",	discipline_name],
+    ["perspectives on",	discipline_name],
+    ["approach to",	discipline_name],
+    ["methods used by",	discipline_name],
+    ["defines", discipline_name],
+    ["needs to acknowledge", discipline_name],
+    ["acknowledges", discipline_name],
 
-	[discipline_name, 'generates'],
-	[discipline_name, 'claimes'],
-	[discipline_name, 'proved'],
-	[discipline_name, 'proves'],
+    [discipline_name, 'generates'],
+    [discipline_name, 'claimes'],
+    [discipline_name, 'proved'],
+    [discipline_name, 'proves'],
 
-	[discipline_name, 'is an ally of', discipline_name],
-	[discipline_name, 'uses methods of', discipline_name],
-	[discipline_name, 'denies claims of', discipline_name],
-	[discipline_name, 'supports', discipline_name],
-	[discipline_name, 'is also', x, 'of', discipline_name],
-	[discipline_name, 'is also', x, 'for', discipline_name],
-	[discipline_name, 'is similar to', discipline_name],
-	[discipline_name, 'is related', discipline_name],
-	[discipline_name, 'uses methods created by', discipline_name],
-	[discipline_name, 'uses methods developed by', discipline_name]]
-
+    [discipline_name, 'is an ally of', discipline_name],
+    [discipline_name, 'uses methods of', discipline_name],
+    [discipline_name, 'denies claims of', discipline_name],
+    [discipline_name, 'supports', discipline_name],
+    [discipline_name, 'is also', x, 'of', discipline_name],
+    [discipline_name, 'is also', x, 'for', discipline_name],
+    [discipline_name, 'is similar to', discipline_name],
+    [discipline_name, 'is related', discipline_name],
+    [discipline_name, 'uses methods created by', discipline_name],
+    [discipline_name, 'uses methods developed by', discipline_name]]

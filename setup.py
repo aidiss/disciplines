@@ -1,5 +1,5 @@
 import sys
-
+import pytest
 from setuptools import Command
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
@@ -18,7 +18,6 @@ class PyTest(TestCommand):
         self.test_suite = True
 
     def run_tests(self):
-        import pytest
         sys.exit(pytest.main([
             '--quiet',
             '--capture=no',
