@@ -1,10 +1,7 @@
-disciplines
+Disciplines
 ===========
 
 A package dedicated to research of academic disciplines.
-
-disciplines
-=========
 
 Version
 ----
@@ -12,7 +9,9 @@ Version
 0.01
 
 Package is dedicated to analysis of *academic scientific disciplines*. Disciplines in all of its forms and types. All branches, fields, subdisciplines, interdisciplines, 
+
 To achieve that we:
+
 1. implement various *theories* that describe the disciplines.
 2. link to *data*, and get it
 3. develop *method* that connects data to theories.
@@ -20,41 +19,45 @@ To achieve that we:
 5. *Describe* the findings in natural text.
 6. Export it to *web*.
 
-Theories:
+## Theories
+
 Such as *Academic tribes and territories* by Becher, or number of approaches listed in *The sociology of scientific work* by Vinck, or stages of emergence by Ziman.
 In this module we prepare a set of of theories. Calls for implementation are also accepted [link][ff]
 
-Data:
+## Data
+
 Links to dbpedia and other open data.
 Description of missing information.
 Monitor appearance of resources.
 Getting data about disciplines, related conferences, publications, descriptions, syllabuses, pictures, classifications, persons, concepts, collection of urls.
 Use of graph(networkx), database(sqlite), dataframe(pandas). 
 
-Methods:
+## Methods
+
 The integration of all defined data and theories. The main idea is to all theories with all available data
 Applying theories to data. With having formal approach to theories and different data we can do amazing things.
 Basically this module allows hypothesis testing. Allows such complicated stuff as:
 history - reconstruction of history. Should be generating text, pictures, people from the data that I have analysed. It should work when asking for "do something based on"
 
-Example:
+## Example:
 
-    from disciplines.theory import emergence  # imports emergence theory
-    print emergence.concepts  # prints concepts used in theory
-    > citation network 
-    > hierarchy
-    > conferences
-    
-    from disciplines.data import db
-    from methods import check_fit 
-    check_fit(emergence.concepts, db)  # checks whether available data is fit for working with theory
-    > 'citation network' is available 0.3
-    > 'hierarchies' are available 0.3
-    > 'conferences' are available 0.1
+```py
+from disciplines.theory import emergence  # imports emergence theory
+print emergence.concepts  # prints concepts used in theory
+> citation network 
+> hierarchy
+> conferences
 
+from disciplines.data import db
+from methods import check_fit 
+check_fit(emergence.concepts, db)  # checks whether available data is fit for working with theory
+> 'citation network' is available 0.3
+> 'hierarchies' are available 0.3
+> 'conferences' are available 0.1
+```
 
-Development strategy
------
+## Development strategy
+
 1. Prototype with theory that describes small phenomenon.
 2. Use of examples.
 	- In some cases examples are just a mentioning of some discipline or subdiscipline.
@@ -68,22 +71,8 @@ Development strategy
 	5. Estimate or build a strategy for developing rarely mentioned cases.
 	6. Based on findings of stages 1 to 5, investigate disciplinary formations not mentioned in theory.
 
-Dependencies
------------
+## Install
 
-Disciplines uses a number of open source projects to work properly:
-* [sqlite3]
-* [pandas]
-* [networkx]
+`pip install -r requirements.txt`
 
-Installation
---------------
-Not yet...
-
-License
-----
-MIT
-
-Further reading
----
 [Documentation](doc/docs.md)
